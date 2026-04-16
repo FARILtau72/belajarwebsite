@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        .nav {
+            background: #fff;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand { font-weight: 700; font-size: 18px; }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover { background: #eef2ff; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .profile {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .muted { color: #6b7280; }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background: #eef2ff;
+            color: #4b6cb7;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 800px) {
+            .nav-inner { flex-direction: column; align-items: flex-start; }
+            .avatar { width: 100%; height: 240px; }
+            td { display: block; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">MyGallery</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="hayu.html">Gallery</a>
+                <a href="galeri.html">Artikel</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="page.html">Profil</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/kotol.jpg" class="avatar" alt="Profile Photo">
+                    </td>
+                    <td>
+                        <h1>Fariljees</h1>
+                        <p class="muted">Pelajar yang sedang belajar web development dan desain UI.</p>
+                        <p class="muted">Suka membuat tampilan yang sederhana, rapi, dan mudah dipahami.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <audio id="lagu" src="Nidji - Rahasia Hati.mp3" loop></audio>
+
+<script>
+  function mulaiAudio() {
+    var audio = document.getElementById("lagu");
+    audio.play();
+
+    document.getElementById("overlay").style.display = "none";
+  }
+  </script>
+</body>
+</html>

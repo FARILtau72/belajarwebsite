@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Utama - Situs Web Pribadi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .nav-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .nav-card h2 {
+            color: #4b6cb7;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .nav-card a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .nav-card a:hover {
+            background: linear-gradient(to right, #3a5ca0, #121f3d);
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .content-section h2 {
+            color: #4b6cb7;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .content-section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(to right, #3a7bd5, #00d2ff);
+            color: white;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navigation {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Situs Web Pribadi</h1>
+            <p>Selamat datang di portal informasi pribadi saya</p>
+        </header>
+
+        <div class="navigation">
+            <div class="nav-card">
+                <h2>Beranda</h2>
+                <p>Halaman utama dengan informasi dasar tentang saya</p>
+                <a href="index.html">Lihat Halaman</a>
+            </div>
+            
+            <div class="nav-card">
+                <h2>Profil</h2>
+                <p>Curriculum Vitae dan informasi pribadi saya</p>
+                <a href="page.html">Lihat Halaman</a>
+            </div>
+            
+            <div class="nav-card">
+                <h2>Galeri</h2>
+                <p>Kumpulan gambar dan proyek yang telah saya kerjakan</p>
+                <a href="hayu.html">Lihat Halaman</a>
+            </div>
+            
+            <div class="nav-card">
+                <h2>Artikel</h2>
+                <p>Tulisan dan informasi tentang pengembangan web</p>
+                <a href="galeri.html">Lihat Halaman</a>
+            </div>
+            
+            <div class="nav-card">
+                <h2>Kontak</h2>
+                <p>Informasi kontak dan media sosial saya</p>
+                <a href="kontak.html">Lihat Halaman</a>
+            </div>
+            
+            <div class="nav-card">
+                <h2>Tabel</h2>
+                <p>Contoh tampilan tabel dan layout</p>
+                <a href="table.html">Lihat Halaman</a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Tentang Situs Ini</h2>
+            <p>Situs ini merupakan portofolio pribadi saya yang berisi informasi tentang diri saya, keterampilan, pengalaman, dan proyek-proyek yang telah saya kerjakan. Setiap halaman dirancang untuk memberikan informasi yang jelas dan terstruktur tentang berbagai aspek dari pengalaman saya.</p>
+            
+            <p>Situs ini dibangun menggunakan HTML, CSS, dan JavaScript dasar, dengan fokus pada desain yang responsif dan pengalaman pengguna yang baik.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 - Situs Web Pribadi. Hak Cipta Dilindungi.</p>
+        </footer>
+    </div>
+</body>
+</html>

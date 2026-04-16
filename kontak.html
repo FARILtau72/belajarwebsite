@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - MyGallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, sans-serif;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255, 208, 130, 0.35), transparent 40%),
+                radial-gradient(circle at 80% 10%, rgba(120, 179, 255, 0.32), transparent 40%),
+                linear-gradient(180deg, #f7fbff 0%, #e9f0f7 100%);
+            min-height: 100vh;
+            color: #1f2937;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 30px 18px 60px;
+        }
+
+        .nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 25px rgba(17, 24, 39, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand {
+            font-weight: 800;
+            font-size: 20px;
+            color: #0b3b66;
+        }
+
+        .nav-links {
+            font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            padding: 8px 12px;
+            border-radius: 999px;
+            display: inline-block;
+            color: #334155;
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: #dbeafe;
+            color: #0f172a;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 16px 0 24px;
+        }
+
+        .page-title {
+            margin: 0;
+            font-size: clamp(28px, 5vw, 44px);
+            line-height: 1.1;
+            color: #102a43;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            margin: 10px auto 0;
+            color: #526d87;
+            max-width: 580px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 26px rgba(15, 23, 42, 0.1);
+            display: block;
+            border: 1px solid #e5edf7;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 34px rgba(15, 23, 42, 0.16);
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 14px 16px 16px;
+        }
+
+        .muted {
+            color: #6b7280;
+        }
+
+        .friend-name {
+            margin: 0;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .friend-link {
+            margin: 6px 0 0;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .friends-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 34px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #dbe7f5;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .contact h3 {
+            margin: 0 0 8px;
+            color: #0b3b66;
+        }
+
+        footer p {
+            margin: 26px 0 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .friends-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 14px 40px;
+            }
+
+            .nav-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                justify-content: flex-start;
+            }
+
+            .friends-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">MyGallery</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="hayu.html">Gallery</a>
+                <a href="galeri.html">Artikel</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="page.html">Profil</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" id="home">
+        <section class="hero center">
+            <h2 class="page-title" id="gallery">Teman</h2>
+        </section>
+
+        <section class="friends-grid">
+            <a href="https://madzz-studio.byethost18.com" class="card">
+                <img src="https://images.pexels.com/photos/4512766/pexels-photo-4512766.jpeg" alt="Website Aqil">
+                <div class="card-body">
+                    <p class="friend-name">Aqil</p>
+                    <p class="friend-link">madzz-studio.byethost18.com</p>
+                </div>
+            </a>
+
+            <a href="https://vatar.byethost33.com/" class="card">
+                <img src="https://images.pexels.com/photos/11495792/pexels-photo-11495792.jpeg" alt="Website Vatar">
+                <div class="card-body">
+                    <p class="friend-name">Vatar</p>
+                    <p class="friend-link">vatar.byethost33.com</p>
+                </div>
+            </a>
+
+            <a href="https://echicii.byethost11.com/index.html" class="card">
+                <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg" alt="Website Echicii">
+                <div class="card-body">
+                    <p class="friend-name">Echicii</p>
+                    <p class="friend-link">echicii.byethost11.com</p>
+                </div>
+            </a>
+
+            <a href="https://moreno1.22web.org/" class="card">
+                <img src="https://images.pexels.com/photos/36669053/pexels-photo-36669053.jpeg" alt="Website Moreno">
+                <div class="card-body">
+                    <p class="friend-name">Moreno</p>
+                    <p class="friend-link">moreno1.22web.org</p>
+                </div>
+            </a>
+
+            <a href="https://ziimorales.byethost33.com/" class="card">
+                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" alt="Website Zii Morales">
+                <div class="card-body">
+                    <p class="friend-name">Zii Morales</p>
+                    <p class="friend-link">ziimorales.byethost33.com</p>
+                </div>
+            </a>
+
+            <a href="https://jagooo.byethost14.com/" class="card">
+                <img src="img/kotol.jpg" alt="Website Ghipar">
+                <div class="card-body">
+                    <p class="friend-name">Ghipar</p>
+                    <p class="friend-link">jagooo.byethost14.com</p>
+                </div>
+            </a>
+
+            <a href="https://boraksend.byethost8.com/kecil.html" class="card">
+                <img src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg" alt="Website Boraksend">
+                <div class="card-body">
+                    <p class="friend-name">Boraksend</p>
+                    <p class="friend-link">boraksend.byethost8.com</p>
+                </div>
+            </a>
+
+            <a href="https://nauraazzahra.byethost7.com/" class="card">
+                <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg" alt="Website Naura Azzahra">
+                <div class="card-body">
+                    <p class="friend-name">Naura Azzahra</p>
+                    <p class="friend-link">nauraazzahra.byethost7.com</p>
+                </div>
+            </a>
+
+            <a href="https://naufal.byethost5.com" class="card">
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Website Naufal">
+                <div class="card-body">
+                    <p class="friend-name">Naufal</p>
+                    <p class="friend-link">naufal.byethost5.com</p>
+                </div>
+            </a>
+
+            <a href="https://dhann.byethost22.com" class="card">
+                <img src="https://images.pexels.com/photos/30985136/pexels-photo-30985136.jpeg" alt="Website Dhann">
+                <div class="card-body">
+                    <p class="friend-name">Dhann</p>
+                    <p class="friend-link">dhann.byethost22.com</p>
+                </div>
+            </a>
+
+            <a href="https://bintuyyy.byethost6.com/galeri.html" class="card">
+                <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg" alt="Website Bintuyyy">
+                <div class="card-body">
+                    <p class="friend-name">Bintuyyy</p>
+                    <p class="friend-link">bintuyyy.byethost6.com</p>
+                </div>
+            </a>
+
+            <a href="http://teddythecoder.byethost9.com" class="card">
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="Website Rasya">
+                <div class="card-body">
+                    <p class="friend-name">Rasya</p>
+                    <p class="friend-link">teddythecoder.byethost9.com</p>
+                </div>
+            </a>
+
+            <a href="https://farildev.my.id" class="card">
+                <img src="https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg" alt="Website Faril">
+                <div class="card-body">
+                    <p class="friend-name">Faril</p>
+                    <p class="friend-link">farildev.my.id</p>
+                </div>
+            </a>
+
+            <a href="http://diewebsites.byethost6.com/" class="card">
+                <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Website Die">
+                <div class="card-body">
+                    <p class="friend-name">Die Websites</p>
+                    <p class="friend-link">diewebsites.byethost6.com</p>
+                </div>
+            </a>
+
+            <a href="https://khalfani.byethost22.com/" class="card">
+                <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg" alt="Website Khalfani">
+                <div class="card-body">
+                    <p class="friend-name">Khalfani</p>
+                    <p class="friend-link">khalfani.byethost22.com</p>
+                </div>
+            </a>
+
+            <a href="https://agitperdana.byethost9.com/galeri.html" class="card">
+                <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg" alt="Website Agit Perdana">
+                <div class="card-body">
+                    <p class="friend-name">Agit Perdana</p>
+                    <p class="friend-link">agitperdana.byethost9.com</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="contact" id="contact">
+            <h3>Kontak</h3>
+            <p class="muted">Email: halo@mygallery.com | IG: @mygallery</p>
+        </section>
+        <footer>
+            <p class="center muted">&copy; 2026 MyGallery. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
