@@ -1,77 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Filosofi Foto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #1f2937;
+        }
+
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 16px 24px;
+        }
+
+        .article-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+            padding: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #374151;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #4f46e5;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .site-footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 18px 16px 24px;
+            color: #4b5563;
+            font-size: 14px;
+        }
+    </style>
 </head>
-<style>
-  * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        min-height: 100vh;
-        color: #333;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-
-    p{
-        font-size: 18px;
-        line-height: 1.6;
-        max-width: 600px;
-        margin: 24px auto;
-    }
-
-    h1 {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 32px;
-    }
-
-
-    img {
-        display: block;
-        max-width: 100%;
-        height: 500px;
-        margin: 24px auto;
-        border-radius: 12px;
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    button {
-        display: block;
-        margin: 24px auto;
-        padding: 12px 24px;
-        font-size: 16px;
-        color: #fff;
-        background: #4f46e5;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    }
-</style>
 <body>
-    <h1>FILOSOFI FOTO</h1>
-    <img src="https://images.pexels.com/photos/11410645/pexels-photo-11410645.jpeg "alt="Filosofi Foto">
-    <p>
-      sebuah Bunga berwarna kuning yang indah, namun tidak bisa mekar dengan sempurna , 
-      Pemandangan yang indah di Lihat dari sebuah foto yang tampak usang , itu lah filosofi foto ini, Walaupun kita tidak bisa melihat dengan jelas,</p>
-    <hr>
-     <button onclick="window.location.href='index.html'">Kembali ke Home</button>
-     <footer>
-        <p class="center muted" style="padding: 24px 0; font-size: 14px;">
-            &copy; 2026 FARIL PUTRA PRATAMA.
-        </p>
+    <main>
+        <article class="article-card">
+            <h1>FILOSOFI FOTO</h1>
+            <img src="https://images.pexels.com/photos/11410645/pexels-photo-11410645.jpeg" alt="Filosofi Foto">
+            <p>
+                Bunga kuning ini menunjukkan bahwa keindahan tidak harus selalu sempurna. Kadang ada bagian yang pudar, ada detail yang tidak terlalu tajam, tapi justru itu yang membuat foto terasa jujur. Keindahan sering datang dari ketidaksempurnaan yang diterima.
+            </p>
+            <a class="back-btn" href="index.html">Kembali ke Home</a>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 MyGallery. All rights reserved.</p>
     </footer>
 </body>
 </html>
+

@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Filosofi Foto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #1f2937;
+        }
+
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 16px 24px;
+        }
+
+        .article-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+            padding: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #374151;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #4f46e5;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .site-footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 18px 16px 24px;
+            color: #4b5563;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center; margin-top: 40px;">FILOSOFI FOTO</h1>
-    <img src="https://images.pexels.com/photos/4512766/pexels-photo-4512766.jpeg" style="height: auto;">
-    <p style="text-align: center; margin-top: 20px; font-size: 18px; color: #555;">
-        Sebuah Bunga yang Indah, namun tidak bisa mekar dengan sempurna , Pemandangan yang indah di Lihat dari sebuah
-        jendela, Tirai yang menutupi jendela, namun tetap bisa melihat pemandangan yang indah, Seperti itulah filosofi foto ini,
-        Walaupun kita tidak bisa melihat dengan jelas, 
-    <hr>
-   
+    <main>
+        <article class="article-card">
+            <h1>FILOSOFI FOTO</h1>
+            <img src="https://images.pexels.com/photos/4512766/pexels-photo-4512766.jpeg" alt="Filosofi Foto">
+            <p>
+                Sebuah bunga sederhana bisa membawa pesan besar: keindahan tidak harus ramai. Dengan warna yang tenang dan komposisi yang bersih, foto ini mengajak kita menikmati hal kecil yang sering terlewat dalam keseharian.
+            </p>
+            <a class="back-btn" href="../index.html">Kembali ke Home</a>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 MyGallery. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

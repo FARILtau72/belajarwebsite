@@ -1,184 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my tabel</title>
+    <title>Filosofi Foto</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            padding: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
-            color: #333;
+            display: flex;
+            flex-direction: column;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #1f2937;
         }
 
-        table {
+        main {
+            flex: 1;
             width: 100%;
-            max-width: 1200px;
+            max-width: 920px;
             margin: 0 auto;
-            border-collapse: collapse;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
+            padding: 32px 16px 24px;
         }
 
-       th, td {
-            padding: 20px;
-            vertical-align: bottom; 
-            border: 1px solid #e0e0e0;
-           }
-        th {
+        .article-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+            padding: 24px;
+        }
+
+        h1 {
+            margin: 0;
             text-align: center;
-            background: linear-gradient(to right, #4b6cb7, #182848);
-            color: white;
-            vertical-align: middle;
-            font-weight: bold;
-            position: relative;
-        }
-
-        th a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        th a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        a {
-            text-decoration: none;
-            color: #4b6cb7;
-            font-weight: bold;
-            margin: 0 10px;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #182848;
+            font-size: 30px;
         }
 
         img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
             display: block;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        img:hover {
-            transform: scale(1.03);
-        }
-
-        .name-cell {
-            font-size: 1.8em;
-            font-weight: bold;
-            text-align: center;
-            vertical-align: middle;
-            width: 25%;
-            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-            color: #2c3e50;
-        }
-
-        h3 {
-            margin-top: 0;
-            color: #2c3e50;
-            font-size: 1.4em;
-            border-bottom: 2px solid #4b6cb7;
-            padding-bottom: 5px;
-            display: inline-block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 20px auto;
         }
 
         p {
-            line-height: 1.6;
-            color: #555;
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #374151;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #4f46e5;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .site-footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 18px 16px 24px;
+            color: #4b5563;
             font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .content-section {
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        tfoot th {
-            background: linear-gradient(to right, #3a7bd5, #00d2ff);
-        }
-
-        @media screen and (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            table {
-                width: 100%;
-            }
-            
-            th a {
-                display: block;
-                margin: 5px 0;
-            }
-            
-            .name-cell {
-                width: 100%;
-                font-size: 1.5em;
-            }
-            
-            td[rowspan] {
-                display: table-row;
-            }
         }
     </style>
 </head>
 <body>
+    <main>
+        <article class="article-card">
+            <h1>FILOSOFI FOTO</h1>
+            <img src="https://images.pexels.com/photos/4512766/pexels-photo-4512766.jpeg" alt="Filosofi Foto">
+            <p>
+                Setiap karya punya cerita, termasuk foto ini. Meski tampil sederhana, foto ini menyampaikan pesan tentang ketenangan, proses, dan cara melihat keindahan dari hal yang dekat dengan kita.
+            </p>
+            <a class="back-btn" href="index.html">Kembali ke Home</a>
+        </article>
+    </main>
 
-    <table>
-        <thead>
-          
-           </div>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2">
-                    <img src="img/kotol.jpg" alt="Code Editor">
-                </td>
-                <td>
-                    <img src="img/kotol.jpg" alt="Code Editor">
-                   </td>
-                <td>
-                    <img src="img/kotol.jpg" alt="Code Editor">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <img src="img/kotol.jpg" alt="Code Editor">
-                </td>
-                <td>
-                        
-                        <img src="img/kotol.jpg" alt="Code Editor">
-                </td>
-                <td>
-                    <img src="img/kotol.jpg" alt="Code Editor">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 MyGallery. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
